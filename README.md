@@ -9,7 +9,7 @@ Questo progetto utilizza Angular2 e TypeScript. Non è presente alcun servizio RE
 
 ### Applicazione
 I file principali dell'applicazione sono:<br>
-myfirstcomponent.ts --> Contiene il componente angular
+myfirstcomponent.ts --> Contiene il componente angular <br>
 Index.html --> Contiene la pagina html
 
 ### Configurazioni
@@ -18,9 +18,9 @@ File tsconfig.json --> Configura typescript <br>
 File typings.json --> Librerie aggiuntive typescript <br>
 File systemjs.config.js --> Carica i moduli e inizializza l'applicazione<br>
 
-
 Per provare il progetto e' necessario aver installato nmp.
-Una volta scaricato il progetto è necessario lanciare i comandi "npm init" e "npm update" per inizializzare le dipendenze Javascript utilizzate dal progetto.
+Una volta scaricato il progetto è necessario lanciare i comandi "npm install" e "npm update" per inizializzare le dipendenze Javascript utilizzate dal progetto.<br>
 
-### Link
+### Test
+Per provare il progetto è necessario eseguire il comando npm init
 Esempio HelloWorld: http://localhost:8080/Index.html <br>
