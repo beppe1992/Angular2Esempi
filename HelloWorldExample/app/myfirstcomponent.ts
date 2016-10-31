@@ -7,7 +7,10 @@ import { Component } from '@angular/core';
       <input [(ngModel)]="utente.nome" placeholder="nome">
       <input [(ngModel)]="utente.cognome" placeholder="cognome">
       <br><br>
-      {{messaggioBenvenuto}} {{utente.matricola}} - <b>{{utente.nome}} {{utente.cognome}}</b>`
+      {{messaggioBenvenuto}} {{utente.matricola}} - <b>{{utente.nome}} {{utente.cognome}}</b>
+	  <br><br>
+	  <button (click)="saluta($event)">Saluta</button>
+	  `
 })
 
 export class MyFistComponent {
@@ -19,6 +22,10 @@ export class MyFistComponent {
       nome: '',
 	    cognome: ''
     };
+	
+	saluta(event) {
+		console.log('Ciao, '+ this.utente.nome + ' mi hai cliccato');
+	}
 
 }
 
