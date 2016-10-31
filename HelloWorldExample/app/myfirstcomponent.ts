@@ -1,19 +1,29 @@
 import { Component } from '@angular/core';
 
-
 @Component({
   selector: 'my-first-component',
-  template: `<h1>
-			{{messaggioBenvenuto}} {{utente.matricola}} - <b>{{utente.nome}} {{utente.cognome}}</b>
-			</h1>`
+  template: `
+      <input [(ngModel)]="utente.matricola" placeholder="matricola">
+      <input [(ngModel)]="utente.nome" placeholder="nome">
+      <input [(ngModel)]="utente.cognome" placeholder="cognome">
+      <br><br>
+      {{messaggioBenvenuto}} {{utente.matricola}} - <b>{{utente.nome}} {{utente.cognome}}</b>`
 })
-export class MyFistComponent { 
-	
+
+export class MyFistComponent {
+
 	messaggioBenvenuto = 'Benvenuto';
-    utente: User = {
-      matricola: "are54658",
-      nome: 'Giuseppe!',
-	  cognome: 'Giordano!'
+
+	 utente: User = {
+      matricola: '',
+      nome: '',
+	    cognome: ''
     };
 
+}
+
+export class User {
+  matricola: string;
+  nome: string;
+  cognome: string;
 }
