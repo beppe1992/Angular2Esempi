@@ -22,5 +22,5 @@ Per provare il progetto e' necessario aver installato nmp.
 Una volta scaricato il progetto è necessario lanciare il comando "npm install"  per inizializzare le dipendenze Javascript utilizzate dal progetto.<br>
 
 ### Test
-Per provare il progetto è necessario eseguire il comando npm init
+Per provare il progetto è necessario eseguire il comando npm start
 Esempio HelloWorld: http://localhost:3000/ <br>
