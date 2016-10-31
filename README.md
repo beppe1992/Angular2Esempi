@@ -19,8 +19,8 @@ File typings.json --> Librerie aggiuntive typescript <br>
 File systemjs.config.js --> Carica i moduli e inizializza l'applicazione<br>
 
 Per provare il progetto e' necessario aver installato nmp.
-Una volta scaricato il progetto è necessario lanciare i comandi "npm install" e "npm update" per inizializzare le dipendenze Javascript utilizzate dal progetto.<br>
+Una volta scaricato il progetto è necessario lanciare il comando "npm install"  per inizializzare le dipendenze Javascript utilizzate dal progetto.<br>
 
 ### Test
 Per provare il progetto è necessario eseguire il comando npm init
-Esempio HelloWorld: http://localhost:8080/Index.html <br>
+Esempio HelloWorld: http://localhost:3000/ <br>

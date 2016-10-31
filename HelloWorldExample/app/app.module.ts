@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms'; // abilita uso forms angularjs2
-import { MyFistComponent } from './myfirstcomponent';
+import { MyFistComponent } from './myfirstcomponent/myfirstcomponent';
 
 
 @NgModule({
