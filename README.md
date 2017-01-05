@@ -25,6 +25,6 @@ Una volta scaricato il progetto è necessario lanciare il comando "npm install"  
 Per provare il progetto è necessario eseguire il comando npm start
 Esempio HelloWorld: http://localhost:3000/ <br>
 
-## StepByStepProject 
+## ProgettoWebSempliceGuidato 
 Questo progetto contiene le istruzioni per creare un progetto completo fatto con Angular2.<br>
 Le istruzioni sono nel documento "STEP_BY_STEP_INDICATION.docx"<br>
