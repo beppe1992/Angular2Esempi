@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit     } from '@angular/core';
 import {RicercaDomain} from '../ricerca-domain';
 import {RicercaService} from '../ricerca.service';
 
