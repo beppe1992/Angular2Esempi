@@ -5,7 +5,6 @@ import {RicercaService} from '../ricerca.service';
 @Component({
   moduleId: module.id,
   selector: 'app-ricerca',
-  providers: [RicercaService],
   templateUrl: 'ricerca.component.html',
   styleUrls: ['ricerca.component.css']
 })

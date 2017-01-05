@@ -7,14 +7,14 @@ export class RicercaService {
 
   risultatiModel : RisultatiModelService
 
-  constructor() {
-    
+  constructor(risultatiModel : RisultatiModelService) {
+      this.risultatiModel = risultatiModel;
   }
 
   cerca (filtriRicerca: RicercaDomain) : void{
 
      // creo una lista mock
-      let risultatiRicercaMock : Array<String>;
+     var risultatiRicercaMock: Array<String> = [];
       risultatiRicercaMock.push("risultato1");
       risultatiRicercaMock.push("risultato2");
 
