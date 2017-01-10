@@ -1,0 +1,11 @@
+<section class="todoapp">
+  <header class="header">
+      FILTRI DI RICERCA
+  </header>
+</section>
+
+<input class="nome" placeholder="Inserire il nome di ricerca" [(ngModel)]="filtriRicerca.nome">
+<input class="nome"  placeholder="Inserire il cognome di ricerca" [(ngModel)]="filtriRicerca.cognome">
+<button (click)="ricerca()">Cerca</button>
+
+<label>I filtri di ricerca sono: {{filtriRicerca.nome}} - {{filtriRicerca.cognome}}</label>
