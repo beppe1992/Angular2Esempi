@@ -1,3 +1,15 @@
-<p>
-  Home Page Applicazione
-</p>
+  <br>
+  Home Page Applicazione - di seguito sono presenti alcuni componenti base di Material Design
+
+  <div>
+
+    <h3>SELECT ITEM</h3>
+
+    <md-select placeholder="Colori" [(ngModel)]="coloreSelezionato" name="colore">
+      <md-option *ngFor="let colore of colori" [value]="colore.value">
+        {{colore.viewValue}}
+      </md-option>
+    </md-select>
+
+    Selected value: {{coloreSelezionato}}
+  </div>

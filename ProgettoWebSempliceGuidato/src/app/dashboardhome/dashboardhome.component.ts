@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardhomeComponent implements OnInit {
 
+  coloreSelezionato: string;
+
+  colori = [
+    {value: 'blue', viewValue: 'blue'},
+    {value: 'red', viewValue: 'red'},
+    {value: 'green', viewValue: 'green'}
+  ];
+
   constructor() { }
 
   ngOnInit() {

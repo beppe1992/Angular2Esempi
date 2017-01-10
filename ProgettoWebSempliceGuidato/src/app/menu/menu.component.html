@@ -1,7 +1,15 @@
+<div class="outer-outlet">
+  <md-toolbar color="primary">
+    <span>Applicazione Guidata</span>
 
-<a [routerLink]="['/']">Home Page</a>
-<a [routerLink]="['/ricerca-base']">Funzionalità Ricerca Base</a>
-
+    <!-- This fills the remaining space of the current row -->
+    <span class="example-fill-remaining-space"></span>
+    <span class="example-spacer"></span>
+    <span><a [routerLink]="['/']">Home Page</a></span>
+    <span class="example-spacer"></span>
+    <span><a [routerLink]="['/ricerca-base']">Funzionalità Ricerca Base</a></span>
+  </md-toolbar>
+</div>
 <div class="outer-outlet">
   <router-outlet></router-outlet>
 </div>

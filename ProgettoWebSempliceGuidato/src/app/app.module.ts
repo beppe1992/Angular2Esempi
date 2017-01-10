@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { MaterialModule } from '@angular/material';
 import { RicercaComponent } from './ricerca/ricerca.component';
 import {RicercaService} from './ricerca.service';
 import {RisultatiModelService} from './risultati-model.service';
@@ -24,9 +25,10 @@ import { FunzionalitaricercaComponent } from './funzionalitaricerca/funzionalita
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    MaterialModule.forRoot()
   ],
   providers: [RicercaService,RisultatiModelService],
-  bootstrap: [MenuComponent]
+  bootstrap: [MenuComponent ]
 })
 export class AppModule { }

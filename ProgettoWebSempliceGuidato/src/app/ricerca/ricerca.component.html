@@ -1,11 +1,17 @@
-<section class="todoapp">
-  <header class="header">
-      FILTRI DI RICERCA
-  </header>
-</section>
+<h3> FILTRI DI RICERCA</h3>
 
-<input class="nome" placeholder="Inserire il nome di ricerca" [(ngModel)]="filtriRicerca.nome">
-<input class="nome"  placeholder="Inserire il cognome di ricerca" [(ngModel)]="filtriRicerca.cognome">
-<button (click)="ricerca()">Cerca</button>
+<br>
 
+<md-input-container class="example-full-width">
+  <input md-input placeholder="Inserire il nome di ricerca" [(ngModel)]="filtriRicerca.nome">
+</md-input-container>
+
+<md-input-container class="example-full-width">
+  <input md-input placeholder="Inserire il cognome di ricerca" [(ngModel)]="filtriRicerca.cognome">
+</md-input-container>
+
+<button md-raised-button (click)="ricerca()">Cerca</button>
+
+<br>
+<br>
 <label>I filtri di ricerca sono: {{filtriRicerca.nome}} - {{filtriRicerca.cognome}}</label>
