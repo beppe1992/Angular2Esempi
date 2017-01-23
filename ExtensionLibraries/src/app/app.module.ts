@@ -6,17 +6,22 @@ import { RouterModule } from '@angular/router';
 import { routes } from './menu/app.routes';
 
 // MODULI NECESSARI A PRIME_FACES
-import {MenubarModule} from 'primeng/primeng';
-import {AutoCompleteModule} from 'primeng/primeng';
-import {CheckboxModule} from 'primeng/primeng';
-import {DropdownModule} from 'primeng/primeng';
-import {InputSwitchModule} from 'primeng/primeng';
-import {InputTextareaModule} from 'primeng/primeng';
-import {InputMaskModule} from 'primeng/primeng';
-import {PasswordModule} from 'primeng/primeng';
-import {SpinnerModule} from 'primeng/primeng';
-import {ToggleButtonModule} from 'primeng/primeng';
-import {MultiSelectModule} from 'primeng/primeng';
+import { MenubarModule } from 'primeng/primeng';
+import { AutoCompleteModule } from 'primeng/primeng';
+import { CheckboxModule } from 'primeng/primeng';
+import { DropdownModule } from 'primeng/primeng';
+import { InputSwitchModule } from 'primeng/primeng';
+import { InputTextareaModule } from 'primeng/primeng';
+import { InputMaskModule } from 'primeng/primeng';
+import { PasswordModule } from 'primeng/primeng';
+import { SpinnerModule } from 'primeng/primeng';
+import { ToggleButtonModule } from 'primeng/primeng';
+import { MultiSelectModule } from 'primeng/primeng';
+import { CalendarModule } from 'primeng/primeng';
+import { TriStateCheckboxModule } from 'primeng/primeng';
+import { ButtonModule } from 'primeng/primeng';
+import { SplitButtonModule } from 'primeng/primeng';
+import { GrowlModule } from 'primeng/primeng';
 
 // MODULI DEL MIO PROGETTO
 import { AutocompleteinputComponent } from './primefaces/autocompleteinput/autocompleteinput.component';
@@ -25,6 +30,9 @@ import { CheckboxComponent } from './primefaces/checkbox/checkbox.component';
 import { DropdownComponent } from './primefaces/dropdown/dropdown.component';
 import { SwitchComponent } from './primefaces/switch/switch.component';
 import { TextinputComponent } from './primefaces/textinput/textinput.component';
+import { CalendarComponent } from './primefaces/calendar/calendar.component';
+import { ButtonComponent } from './primefaces/button/button.component';
+import { GrowlmessagesComponent } from './primefaces/growlmessages/growlmessages.component';
 
 
 @NgModule({
@@ -34,8 +42,11 @@ import { TextinputComponent } from './primefaces/textinput/textinput.component';
     CheckboxComponent,
     DropdownComponent,
     SwitchComponent,
-    TextinputComponent
-    ],
+    TextinputComponent,
+    CalendarComponent,
+    ButtonComponent,
+    GrowlmessagesComponent
+  ],
   imports: [
     BrowserModule,
     FormsModule,
@@ -51,7 +62,12 @@ import { TextinputComponent } from './primefaces/textinput/textinput.component';
     PasswordModule,
     SpinnerModule,
     ToggleButtonModule,
-    MultiSelectModule
+    MultiSelectModule,
+    CalendarModule,
+    TriStateCheckboxModule,
+    ButtonModule,
+    SplitButtonModule,
+    GrowlModule
   ],
   providers: [],
   bootstrap: [MenuComponent]

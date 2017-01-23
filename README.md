@@ -28,3 +28,7 @@ Esempio HelloWorld: http://localhost:3000/ <br>
 ## ProgettoWebSempliceGuidato 
 Questo progetto contiene le istruzioni per creare un progetto completo fatto con Angular2.<br>
 Le istruzioni sono nel documento "STEP_BY_STEP_INDICATION.docx"<br>
+
+## ExtensionLibraries  
+Questo progetto contiene alcuni esempi di utilizzo di componenti di terze parti:<br>
+1. Esempio utilizzo di alcuni componenti di Primefaces<br>

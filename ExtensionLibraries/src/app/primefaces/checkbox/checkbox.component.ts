@@ -9,6 +9,8 @@ export class CheckboxComponent implements OnInit {
 
   selectedCitta: string[] = [];
 
+  state: any;
+
   constructor() { }
 
   ngOnInit() {

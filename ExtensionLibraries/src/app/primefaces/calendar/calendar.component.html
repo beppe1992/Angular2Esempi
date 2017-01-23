@@ -1,0 +1,24 @@
+
+
+
+  <div class="ui-g-12 ui-md-4">
+    <h3>Calendar</h3>
+    <p-calendar [(ngModel)]="dataNascita"  [monthNavigator]="true" [yearNavigator]="true" 
+    yearRange="2000:2050" [minDate]="minDate" [maxDate]="maxDate" [readonlyInput]="true" 
+    [showIcon]="true"
+    [locale]="ita"
+    dateFormat="dd/mm/yy"></p-calendar>
+    <br> 
+    <span style="margin-left:35px">{{dataNascita|date}}</span>
+  </div>
+
+
+
+
+  <div class="ui-g-12 ui-md-4">
+    <h3>Time</h3>
+    <p-calendar [(ngModel)]="time" [timeOnly]="true" hourFormat="24"></p-calendar> 
+    <br>
+    <span style="margin-left:35px">{{time}}</span>
+  </div>
+

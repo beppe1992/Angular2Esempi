@@ -1,11 +1,19 @@
-<p>
-  <p-checkbox name="groupname" label="Verona" value="Verona" [(ngModel)]="selectedCitta"></p-checkbox>
-  <p-checkbox name="groupname" label="Torino" value="Torino" [(ngModel)]="selectedCitta"></p-checkbox>
-  <p-checkbox name="groupname" label="Milano" value="Milano" [(ngModel)]="selectedCitta"></p-checkbox>
+<br>
+<br>
+<h1>Basic checkbox</h1>
+<p-checkbox name="groupname" label="Verona" value="Verona" [(ngModel)]="selectedCitta">
+</p-checkbox>
+<p-checkbox name="groupname" label="Torino" value="Torino" [(ngModel)]="selectedCitta"></p-checkbox>
+<p-checkbox name="groupname" label="Milano" value="Milano" [(ngModel)]="selectedCitta"></p-checkbox>
 
 <br>
-  <br>
-  Città Selezionate:
-  {{selectedCitta}}
+<br> Città Selezionate: {{selectedCitta}}
 
-</p>
+<br>
+<br>
+
+<h1>Tristate checkbox</h1>
+<p-triStateCheckbox [(ngModel)]="state"></p-triStateCheckbox>
+
+<br>
+<br> State: {{state}}

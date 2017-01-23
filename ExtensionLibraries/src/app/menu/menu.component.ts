@@ -22,7 +22,10 @@ export class MenuComponent implements OnInit {
                     {label: 'Checkbox',routerLink: ['/checkbox']},
                     {label: 'Dropdown',routerLink: ['/dropdown']},
                     {label: 'Switch',routerLink: ['/switch']},
-                    {label: 'TextInput',routerLink: ['/textinput']} 
+                    {label: 'TextInput',routerLink: ['/textinput']},
+                    {label: 'Calendar',routerLink: ['/calendar']},
+                    {label: 'Button',routerLink: ['/button']},
+                    {label: 'GrowlMessages',routerLink: ['/growlmessages']}    
                     ]
             }
         ];
