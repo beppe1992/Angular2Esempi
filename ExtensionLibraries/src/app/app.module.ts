@@ -22,6 +22,7 @@ import { TriStateCheckboxModule } from 'primeng/primeng';
 import { ButtonModule } from 'primeng/primeng';
 import { SplitButtonModule } from 'primeng/primeng';
 import { GrowlModule } from 'primeng/primeng';
+import {DialogModule} from 'primeng/primeng';
 
 // MODULI DEL MIO PROGETTO
 import { AutocompleteinputComponent } from './primefaces/autocompleteinput/autocompleteinput.component';
@@ -33,6 +34,7 @@ import { TextinputComponent } from './primefaces/textinput/textinput.component';
 import { CalendarComponent } from './primefaces/calendar/calendar.component';
 import { ButtonComponent } from './primefaces/button/button.component';
 import { GrowlmessagesComponent } from './primefaces/growlmessages/growlmessages.component';
+import { DialogmoduleComponent } from './primefaces/dialogmodule/dialogmodule.component';
 
 
 @NgModule({
@@ -45,7 +47,8 @@ import { GrowlmessagesComponent } from './primefaces/growlmessages/growlmessages
     TextinputComponent,
     CalendarComponent,
     ButtonComponent,
-    GrowlmessagesComponent
+    GrowlmessagesComponent,
+    DialogmoduleComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +70,8 @@ import { GrowlmessagesComponent } from './primefaces/growlmessages/growlmessages
     TriStateCheckboxModule,
     ButtonModule,
     SplitButtonModule,
-    GrowlModule
+    GrowlModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [MenuComponent]

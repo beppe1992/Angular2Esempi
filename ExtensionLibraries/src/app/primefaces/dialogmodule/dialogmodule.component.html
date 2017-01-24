@@ -1,0 +1,13 @@
+<p-dialog header="Header" [(visible)]="display" modal="modal" width="300" responsive="true">
+  <br>
+  <h1>Questo e' un popup</h1>
+  <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+    <button type="button" pButton icon="fa-close" (click)="display=false" label="No"></button>
+    <button type="button" pButton icon="fa-check" (click)="display=false" label="Yes"></button>
+  </div>
+
+</p-dialog>
+
+<br>
+<br>
+<button type="text" (click)="showDialog()" pButton icon="fa-external-link-square" label="Show"></button>

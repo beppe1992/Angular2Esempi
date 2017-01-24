@@ -8,6 +8,7 @@ import { TextinputComponent } from '../primefaces/textinput/textinput.component'
 import { CalendarComponent } from '../primefaces/calendar/calendar.component';
 import { ButtonComponent } from '../primefaces/button/button.component';
 import { GrowlmessagesComponent } from '../primefaces/growlmessages/growlmessages.component';
+import { DialogmoduleComponent } from '../primefaces/dialogmodule/dialogmodule.component';
 
 export const routes: Routes  = [
         { path: 'autocompleteinput', component: AutocompleteinputComponent },
@@ -18,5 +19,6 @@ export const routes: Routes  = [
          { path: 'calendar', component: CalendarComponent },
          { path: 'button', component: ButtonComponent },
          { path: 'growlmessages', component: GrowlmessagesComponent },
+         { path: 'dialogmodule', component: DialogmoduleComponent },
          
 ];

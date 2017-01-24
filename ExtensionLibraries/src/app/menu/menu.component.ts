@@ -25,7 +25,8 @@ export class MenuComponent implements OnInit {
                     {label: 'TextInput',routerLink: ['/textinput']},
                     {label: 'Calendar',routerLink: ['/calendar']},
                     {label: 'Button',routerLink: ['/button']},
-                    {label: 'GrowlMessages',routerLink: ['/growlmessages']}    
+                    {label: 'GrowlMessages',routerLink: ['/growlmessages']},
+                    {label: 'DialogModule',routerLink: ['/dialogmodule']}        
                     ]
             }
         ];
