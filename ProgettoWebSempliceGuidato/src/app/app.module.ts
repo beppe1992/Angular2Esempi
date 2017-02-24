@@ -12,14 +12,17 @@ import { DashboardhomeComponent } from './dashboardhome/dashboardhome.component'
 import { MenuComponent } from './menu/menu.component';
 import { routes } from './menu/app.routes';
 import { FunzionalitaricercaComponent } from './funzionalitaricerca/funzionalitaricerca.component';
+import { RestservicecallComponent } from './restservicecall/restservicecall.component';
+import {ServiceconsumerService} from './restservicecall/serviceconsumer.service';
 
 @NgModule({
   declarations: [
     RicercaComponent,
     RisultatiComponent,
     DashboardhomeComponent,
-    MenuComponent,
-    FunzionalitaricercaComponent
+    MenuComponent,  
+    FunzionalitaricercaComponent,
+    RestservicecallComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,7 @@ import { FunzionalitaricercaComponent } from './funzionalitaricerca/funzionalita
     RouterModule.forRoot(routes),
     MaterialModule.forRoot()
   ],
-  providers: [RicercaService,RisultatiModelService],
+  providers: [RicercaService,RisultatiModelService,ServiceconsumerService],
   bootstrap: [MenuComponent ]
 })
 export class AppModule { }
