@@ -20,7 +20,7 @@ export class RestservicecallComponent implements OnInit {
   ricerca(){
       this.serviceConsumer
       .getAll()
-      .subscribe(data =>  this.risultatiRicerca = data );        
+      .subscribe(result =>  this.risultatiRicerca = result );        
   }
 
 }
