@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiceconsumerService } from './serviceconsumer.service';
+import { ServiceResultObj } from './service-result-obj';
 
 @Component({
   selector: 'app-restservicecall',
@@ -8,7 +9,7 @@ import { ServiceconsumerService } from './serviceconsumer.service';
 })
 export class RestservicecallComponent implements OnInit {
 
-  risultatiRicerca: String[] = [];
+  risultatiRicerca: ServiceResultObj[] = [];
 
   // dependency injection in maniera alternativa
   constructor(private serviceConsumer : ServiceconsumerService) { }
@@ -19,7 +20,7 @@ export class RestservicecallComponent implements OnInit {
   ricerca(){
       this.serviceConsumer
       .getAll()
-      .subscribe(p => this.risultatiRicerca = p)
+      .subscribe(data =>  this.risultatiRicerca = data );        
   }
 
 }

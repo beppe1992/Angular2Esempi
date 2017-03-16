@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
+import { ServiceResultObj } from './service-result-obj';
 
 @Injectable()
 export class ServiceconsumerService {
@@ -9,28 +10,12 @@ export class ServiceconsumerService {
 
   constructor(private http : Http) { }
 
-  getAll(): Observable<String[]>{
-    let people$ = this.http
-      .get(`${this.baseUrl}/people`, {headers: this.getHeaders()})
-      .map(mapPersons);
-      return people$;
+  getAll(): Observable<ServiceResultObj[]>{
+    return this.http
+      .get(`${this.baseUrl}/people`)
+      .map(response => response.json().results);
 
   };
 
-  private getHeaders(){
-    let headers = new Headers();
-    headers.append('Accept', 'application/json');
-    return headers;
-  }
 
-}
-
-// funzionalita' per la conversione della risposta
-function mapPersons(response:Response): String[]{
-        return response.json().results.map(extractName)
-}
-
-function extractName(r:any): String{
-
-  return r.name;
 }

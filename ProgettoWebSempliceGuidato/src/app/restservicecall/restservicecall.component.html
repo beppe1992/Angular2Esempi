@@ -3,10 +3,8 @@
 
   <button md-raised-button (click)="ricerca()">Cerca</button>
 
-
-
   <md-list>
- <md-list-item *ngFor="let risultato of risultatiRicerca"> {{ risultato }} </md-list-item>
-</md-list>
+      <md-list-item *ngFor="let risultato of risultatiRicerca"> {{ risultato.name }} </md-list-item>
+  </md-list>
 
 </p>
