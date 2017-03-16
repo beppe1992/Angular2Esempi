@@ -17,5 +17,15 @@ export class ServiceconsumerService {
 
   };
 
+  // ESEMPIO DI METODO CHE CHIAMA UN SERVIZIO DISPOSITIVO (NON ESISTE IL SERVIZIO VERO), RESTITUISCE UNA SEMPLICE Promise
+  // IN QUANTO NON SONO NECESSARIE LE FEATURE CHE GLI OBSERVABLE METTONO A DISPOSIZIONE
+  putNewObj(objDaInserire : ServiceResultObj ): Promise<String>{
+    return this.http
+      .post(`${this.baseUrl}/newUtente`,objDaInserire)
+      .map(response => response.json()  as String)
+      .toPromise();
+
+  };
+
 
 }
