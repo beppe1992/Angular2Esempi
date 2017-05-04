@@ -1,0 +1,11 @@
+
+ <b>PUNTEGGI</b>
+
+
+	<div *ngFor="let punteggio of punteggi">{{punteggio.squadraCasa.codiceSquadra}}:
+		<b>{{punteggio.goalCasa}}</b> VS
+		{{punteggio.squadraOspite.codiceSquadra}}: <b>{{punteggio.goalOspite}}</b>
+	</div>
+
+<button (click)="ricerca()">Forza Refresh</button>
+
