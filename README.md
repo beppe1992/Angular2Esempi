@@ -33,14 +33,14 @@ Le istruzioni sono nel documento "STEP_BY_STEP_INDICATION.docx"<br>
 Questo progetto contiene alcuni esempi di utilizzo di componenti di terze parti:<br>
 1. Esempio utilizzo di alcuni componenti di Primefaces<br>
 
-## WebSocketAngularAndSpring
-Questo progetto contiene un esempio di implementazione delle WebSocket, utilizzando un Angular lato client e Spring Boot lato server.<br>
-L'applicazione di esempio si occuperà di visualizzare il punteggio "live" di una partita di calcio.<br>
+## AngularAndSpringApplication
+Questo progetto contiene un esempio di implementazione di un progetto utilizzando un Angular lato client e Spring Boot lato server.<br>
 
 ### Framework
-Questo progetto utilizza Angular lato client (per gestire WebSocket viene utilizzato XXXXX) e Spring Boot lato Server (per gestire WebSocket vengono utilizzate le implementazioni native di Spring Boot: spring-boot-starter-websocket).
+Questo progetto utilizza Angular lato client e Spring Boot lato Server.
 
 ### Configurazioni
+Una volta scaricato il progetto è necessario lanciare il comando "npm install"<br>
 Per provare il progetto e' necessario lanciare il comando "ng build --base-href /dist/" ed eseguire il main di Spring Boot (App.java).
 
 ### Link
