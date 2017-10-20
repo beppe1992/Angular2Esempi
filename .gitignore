@@ -1,0 +1,16 @@
+
+AngularAndSpringModularApplication/.metadata/.lock
+
+.classpath
+
+.project
+
+.settings/
+
+.node_modules/
+
+*.class
+
+AngularAndSpringModularApplication/*/node_modules/*
+
+AngularAndSpringModularApplication/*/bower_components/*
