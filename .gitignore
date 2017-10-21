@@ -1,5 +1,7 @@
 
-AngularAndSpringModularApplication/.metadata/.lock
+AngularAndSpringModularApplication/.metadata/*
+
+AngularAndSpringModularApplication/Servers/*
 
 .classpath
 
@@ -8,6 +10,8 @@ AngularAndSpringModularApplication/.metadata/.lock
 .settings/
 
 .node_modules/
+
+.Servers/
 
 *.class
 
