@@ -45,24 +45,3 @@ Per provare il progetto e' necessario lanciare il comando "ng build --base-href 
 
 ### Link
 Link Esempio: http://localhost:8080/dist/index.html <br>
-
-## AngularAndSpringModularApplication
-Questo progetto contiene un esempio nel quale vengono implementate molte piccole applicazioni (ognuna in un proprio progetto conentente parte client con Angular e parte server con Spring Boot) e poi tutte unite in un unico ear.<br>
-Il progetto è configurato in modo che quando viene lanciata la build maven, viene lanciata anche una build angular che crea i file per la distribuzione delle nostre applicazioni.
-
-### Framework
-Questo progetto utilizza Angular lato client e Spring Boot lato Server.
-
-### Configurazioni
-Ogni singola applicazione è eseguibile lanciando tutti i Main presenti all'interno di ogni progetto. Lanciando anche il progetto "WAR", si può utilizzare il proxy Zool, grazie al quale tutte le applicazioni rispondono sempre ad un unico server, su un unica porta.<br>
-Per generare l'ear per eseguire il deploy dell'applicazione e necessario lanciare i comandi mvn clean install (sul pom padre) e mvn package (sul pom ApplicazioniEar).
-
-
-### Link
-Link Esempio Applicazione Anagrafiche: http://localhost:9380/applicazioni/anagrafiche/ <br>
-Link Esempio Applicazione Sale: http://localhost:9380/applicazioni/sale/ <br>
-
-### Da migliorare
-1. I file base di angular2 dovrebbero essere centralizzati (compresi i node_modules)<br>
-2. La context root dell'applicazione (/applicazioni) è molto ridondante all'interno del software<br>
-3. Provare a fare il deploy su un was<br>

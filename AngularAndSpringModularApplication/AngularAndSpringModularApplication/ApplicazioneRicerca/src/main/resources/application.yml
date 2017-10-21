@@ -1,3 +1,0 @@
-server:
-  port: 9480
-  context-path: /applicazioni/anagrafiche
