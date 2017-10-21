@@ -5,7 +5,7 @@
     "module": "commonjs",
     "rootDir": "src/main/webapp/static",
     "outDir": "src/main/webapp/static",
-    "sourceRoot": "/applicazioni"
+    "sourceRoot": "/applicazioni/sale"
 
   },
   "exclude": [
